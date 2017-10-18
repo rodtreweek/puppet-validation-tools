@@ -1,34 +1,17 @@
-<p class="p1">The following is a general summary of code validation self service tools/scripts. It is by no means intended as an exhaustive list.  Feel free to add your own suggestions for inclusion to this list in the comments below <ac:emoticon ac:name="smile"/>
-</p>
-<div>
-  <p>
-    <br/>
-  </p>
-  <ac:structured-macro ac:macro-id="aa93b2ce-68e4-4c0c-982f-127fb780b511" ac:name="info" ac:schema-version="1">
-    <ac:rich-text-body>
-      <p>Note: Remember to use the <code>--noop</code> flag if you don't want your changes immediately applied.</p>
-    </ac:rich-text-body>
-  </ac:structured-macro>
-  <p>
-    <br/>
-  </p>
-  <ol>
-    <li>
-      <code>puppet help</code>. Not to be overlooked, this command is often the best starting place for troubleshooting a significant number of issues.</li>
-    <li>
-      <p>
-        <code>puppet apply -e</code> . For example, you might test a hiera lookup with, <code>sudo puppet apply --environment=&lt;target environment&gt; -e "notice(hiera('message'))"</code> . Also, just to give you an idea of how the interpolation works, here's an example using the <code>exec</code> resource:</p>
-      <ac:structured-macro ac:macro-id="155b8c31-ce47-4154-a98f-51815aa12f9d" ac:name="code" ac:schema-version="1">
-        <ac:parameter ac:name="language">bash</ac:parameter>
-        <ac:plain-text-body><![CDATA[puppet apply -e 'exec { "/usr/bin/cowsay $::fqdn > /etc/motd": }' ]]></ac:plain-text-body>
-      </ac:structured-macro>
-      <p>An example using an <code>include</code>:</p>
-      <ac:structured-macro ac:macro-id="7ecd6752-5030-434e-81f7-f07cf976b8aa" ac:name="code" ac:schema-version="1">
-        <ac:parameter ac:name="language">bash</ac:parameter>
-        <ac:plain-text-body><![CDATA[puppet apply -e "include pe_repo::platform::aix_71_power"]]></ac:plain-text-body>
-      </ac:structured-macro>
-    </li>
-    <li>
+The following is a general summary of code validation self service tools/scripts. It is by no means intended as an exhaustive list.  Feel free to add your own suggestions for inclusion to this list in the comments below <ac:emoticon ac:name="smile"/>
+
+Note: Remember to use the <code>--noop</code> flag if you don't want your changes immediately applied.
+  
+puppet help Not to be overlooked, this command is often the best starting place for troubleshooting a significant number of issues.
+    
+puppet apply -e. For example, you might test a hiera lookup with, `sudo puppet apply --environment=target environment -e "notice(hiera('message'))"` . 
+Also, just to give you an idea of how the interpolation works, here's an example using the exec resource:
+      
+     `puppet apply -e 'exec { "/usr/bin/cowsay $::fqdn > /etc/motd": }'`
+      
+      An example using an include:
+      `puppet apply -e "include pe_repo::platform::aix_71_power"`
+      
       <p>How to use an <code>inline_epp</code> template to access elements in an array without a key:</p>
       <ac:structured-macro ac:macro-id="a9eba8cb-e910-4810-8a77-dc18b90d226e" ac:name="code" ac:schema-version="1">
         <ac:parameter ac:name="language">bash</ac:parameter>
