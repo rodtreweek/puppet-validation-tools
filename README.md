@@ -26,7 +26,7 @@ puppet apply -e 'notice(inline_template("<%= @processors[\"models\"].at(0) %>"))
 puppet apply -e 'notice(inline_template("<%= @processors[\"models\"].first %>"))'
 puppet apply -e 'notice(inline_template("<%= @processors[\"models\"].last %>"))'
 ```
-Here is a link to the Type reference: <a href="https://docs.puppet.com/puppet/latest/type.html">https://docs.puppet.com/puppet/latest/type.html</a> . Certainly a great way to learn about the various Types in Puppet, and how best to leverage them.
+Here is a link to the Type reference: https://puppet.com/docs/puppet/5.3/type.html. Certainly a great way to learn about the various Types in Puppet, and how best to leverage them.
     
 3. `hiera_explain` -- Use of this tool is going to vary based on how you have your code and data structured in your Puppet implementation. Here's a link that provides a good starting place for experimenting/learning about how to interact with this module: <a href="https://github.com/binford2k/hiera_explain">https://github.com/binford2k/hiera_explain</a>
       
