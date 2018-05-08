@@ -47,7 +47,7 @@ Then create the log file with: `$touch /var/log/puppetlabs/puppet/puppet-debug.l
 puppet agent -t --debug --trace 2>&1 | tee trace.txt
 ```
 
-8. Beginning with Puppet 4.4, the `puppet lookup` command may be used: https://docs.puppet.com/puppet/4.4/lookup_quick.html">https://docs.puppet.com/puppet/4.4/lookup_quick.html (this is now simply referred to as "Hiera 5", and is documented here: <a href="https://docs.puppet.com/puppet/4.9/hiera_intro.html">https://docs.puppet.com/puppet/4.9/hiera_intro.html</a> and here: <a href="https://support.puppet.com/hc/en-us/articles/115005435168">https://support.puppet.com/hc/en-us/articles/115005435168</a>
+8. Beginning with Puppet 4.4, the `puppet lookup` command may be used (this is now simply referred to as "Hiera 5", and is documented here: <a href="https://docs.puppet.com/puppet/4.9/hiera_intro.html">https://docs.puppet.com/puppet/4.9/hiera_intro.html</a> and here: <a href="https://support.puppet.com/hc/en-us/articles/115005435168">https://support.puppet.com/hc/en-us/articles/115005435168</a>
 
 9. `r10k puppetfile install` -- This will look for a `Puppetfile` in the current working directory, and if found, will install all modules as listed in the file, pulling in all relevant dependencies. This is an indispensable tool when you need to test code, i.e. where you keep getting dependency related errors when using `puppet apply`.
 
