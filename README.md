@@ -1,9 +1,8 @@
 # puppet-validation-tools
-Various bits and pieces for troubleshooting Puppet issues.
 
-The following is a general summary of code validation self service tools/scripts. It is by no means intended as an exhaustive list.  Feel free to add your own suggestions for inclusion to this list in the comments below <ac:emoticon ac:name="smile"/>
+The following is a general summary of code validation "self-service" tools/scripts which can be used to troubleshoot and validate your Puppet code. It is by no means intended as an exhaustive list.  Feel free to contact me/submit a pull request for any inclusions you might like to see added to this list :)
 
-Note: Remember to use the `--noop` flag if you don't want your changes immediately applied.
+**Note: Remember to use the `--noop` flag if you don't want your changes immediately applied.**
   
 1. `puppet help` -- Not to be overlooked, this command is often the best starting place for troubleshooting a significant number of issues.
     
