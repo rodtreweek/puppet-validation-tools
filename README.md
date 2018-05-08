@@ -208,12 +208,4 @@ yumrepo[epel-source]]]></ac:plain-text-body>
     <table class="wrapped">
       <tbody>
         <tr>
-          <th>Related issues</th>
-          <td>
-            <br/>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </ac:rich-text-body>
-</ac:structured-macro>
+      
