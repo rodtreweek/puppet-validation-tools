@@ -184,28 +184,5 @@ yumrepo[epel-source]]]></ac:plain-text-body>
     <span>The above list should offer a reasonable collection of tools for detecting errors/validating code as well as possibly clarifying the points in the "decision tree" within Hiera.  For a more thorough explanation of how to best leverage each of the above suggestions, you should consult the relevant pages on </span> <a href="http://docs.puppet.com/">docs.puppet.com</a> <span>, or try searching support.puppet.com for more specific information.</span>
   </p>
 </div>
-<h2>Related articles</h2>
-<p>
-  <ac:placeholder>Related articles appear here based on the labels you select. Click to edit the macro and add or change labels.</ac:placeholder>
-</p>
-<p>
-  <ac:structured-macro ac:macro-id="35b830dd-c4c6-4b5b-954d-6f4101cdfb13" ac:name="contentbylabel" ac:schema-version="3">
-    <ac:parameter ac:name="showLabels">false</ac:parameter>
-    <ac:parameter ac:name="max">5</ac:parameter>
-    <ac:parameter ac:name="spaces">SUP</ac:parameter>
-    <ac:parameter ac:name="showSpace">false</ac:parameter>
-    <ac:parameter ac:name="sort">modified</ac:parameter>
-    <ac:parameter ac:name="reverse">true</ac:parameter>
-    <ac:parameter ac:name="type">page</ac:parameter>
-    <ac:parameter ac:name="cql">label = "kb-how-to-article" and type = "page" and space = "SUP"</ac:parameter>
-    <ac:parameter ac:name="labels">kb-how-to-article</ac:parameter>
-  </ac:structured-macro>
-</p>
-<ac:structured-macro ac:macro-id="41242f26-5bc8-4a7f-80a8-bb90c09ceb39" ac:name="details" ac:schema-version="1">
-  <ac:parameter ac:name="hidden">true</ac:parameter>
-  <ac:parameter ac:name="id">howto, blueprint</ac:parameter>
-  <ac:rich-text-body>
-    <table class="wrapped">
-      <tbody>
-        <tr>
-      
+
+
