@@ -217,15 +217,3 @@ yumrepo[epel-source]]]></ac:plain-text-body>
     </table>
   </ac:rich-text-body>
 </ac:structured-macro>
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
