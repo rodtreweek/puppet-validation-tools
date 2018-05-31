@@ -114,4 +114,6 @@ yumrepo[epel-source]
 
 13. The `validate_cmd` Resource Types: https://puppet.com/docs/puppet/5.5/types/file.html#file-attribute-validate_cmd. These are great resource types to use in validating a file’s syntax before replacing it.
 
+14. Using a git pre-commit hook.  Here's a link to a gist I've created for a useful git pre-commit hook that can be used to automatically validate/lint files before they are commited to your git repo: https://gist.github.com/rodtreweek/d1ce5ed8925b8d1af6ac90a2fc71d1e4#file-git-pre-commit-hook
+
 The above list should offer a reasonable collection of tools for detecting errors in advance or validating your Puppet code prior to pushing this to production, as well as possibly clarifying various "points in the decision tree" within Hiera.  For a more thorough explanation of how to best leverage each of the above suggestions, you should consult the relevant pages at https://puppet.com/docs, or try searching support.puppet.com for more specific information.
